@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodMap</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="top-container">
+    <div class="top-mood-box">
+        <div class="mood-container">
+            <h5 class="mood-title">Select a Mood</h5>
+            <select class="mood-select" name="moods">
+                <option value="happy">😊 - Happy</option>
+                <option value="neutral">😐 - Neutral</option>
+                <option value="sad">😞 - Sad</option>
+                <option value="angry">😠 - Angry</option>
+                <option value="loved">😍 - Loved It</option>
+            </select>
+        </div>
+
+        <div class="note-container">
+            <h5 class="note-title">Add a Note</h5>
+            <input id="note-input" class="note-input" type="text" placeholder="Enter a note" />
+        </div>
+    </div>
+    
+    <div class="btn-container">
+        <button class="log-btn">Log Mood</button>
+    </div>
+  </div>
+
+  <div class="mid-container">
+    <h5>Your Mood Activity</h5>
+    <div class="heatmap-grid" id="heatmap-grid">
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
